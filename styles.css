@@ -1,0 +1,1165 @@
+/* Загальні стилі */
+body {
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    font-family: Arial, sans-serif;
+    line-height: 1.6;
+    min-height: 100vh;
+    color: #333;
+}
+
+main {
+    margin-top: 50px;
+    flex: 1;
+    padding: 20px;
+}
+
+h1, h2, h3, h4 {
+    margin: 0;
+    padding: 0;
+}
+
+ul {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+/* Стилі для Header */
+header {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    background-color: #333;
+    z-index: 1000;
+    padding: 55px 22px; /* Мінімальні відступи */
+    display: flex;
+    align-items: center; /* Центруємо елементи по вертикалі */
+    height: 50px; /* Фіксована висота панелі */
+}
+header .logo {
+    display: inline-block;
+    padding-left: 10px;
+    height: 10px; /* Відступ зліва */
+}
+header .logo h1 {
+    font-size: 12px;
+    font-weight: bold;
+}
+
+.logo {
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+}
+nav.horizontal-menu ul {
+    display: flex;
+    justify-content: center; /* Центруємо елементи меню */
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+}
+
+nav.horizontal-menu ul li {
+    margin: 0 12px; /* Зменшено відступ між пунктами меню */
+}
+
+nav.horizontal-menu ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px; /* Зменшено розмір шрифта */
+    padding: 5px 10px; /* Зменшено відступи для кожного пункту */
+    display: inline-block;
+}
+
+nav.horizontal-menu ul li a:hover {
+    background-color: #575757; /* Підсвічування при наведенні */
+    border-radius: 5px;
+}
+.horizontal-menu {
+    padding-top: 10px;
+    padding-bottom: 10px;
+}
+
+.horizontal-menu ul {
+    display: flex;
+    justify-content: center;
+    margin: 0;
+    padding: 0;
+    list-style-type: none;
+}
+
+.horizontal-menu li {
+    margin: 0 20px;
+}
+
+.horizontal-menu a {
+    text-decoration: none;
+    color: white;
+    font-family: 'Roboto', sans-serif;
+    font-size: 16px;
+    padding: 10px 15px;
+    display: inline-block;
+    transition: background-color 0.3s ease, padding 0.3s ease;
+}
+
+.horizontal-menu a.active {
+    background-color: #555;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.horizontal-menu a:hover {
+    background-color: #444;
+}
+
+/* Стилі для Hero Section */
+.hero {
+    position: relative;
+    height: 100vh;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: #fff;
+    text-align: center;
+}
+
+.hero video {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    z-index: -1;
+}
+
+.hero-text {
+    z-index: 2;
+    max-width: 600px;
+}
+
+.hero-text h2 {
+    font-size: 48px;
+    margin-bottom: 20px;
+}
+
+.hero-text p {
+    font-size: 18px;
+    margin-bottom: 20px;
+}
+
+.hero-text .btn {
+    background: #ff85a1;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.hero-text .btn:hover {
+    background: #f06277;
+}
+
+/* Стилі для Main Content */
+.intro {
+    text-align: center;
+    margin-bottom: 40px;
+}
+
+.services-preview {
+    text-align: center;
+}
+
+.services-preview h3 {
+    margin-bottom: 20px;
+}
+
+.services-list {
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-item {
+    width: 200px;
+    text-align: center;
+}
+
+.service-item img {
+    width: 100%;
+    height: auto;
+    border-radius: 10px;
+}
+
+/* Стилі для Footer */
+/* Стиль для footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 30px 0;
+    text-align: center;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Список іконок соцмереж у footer */
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0;
+}
+
+.social-links li {
+    display: inline-block;
+    margin: 0 10px;
+}
+
+.social-links a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-links a img:hover {
+    transform: scale(1.1); /* При збільшенні іконок при наведенні */
+}
+
+/* Стиль кнопки для переходу на деталі */
+footer button {
+    background-color: #4CAF50;
+    color: white;
+    padding: 12px 25px;
+    font-size: 1em;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-transform: uppercase;
+    font-family: 'Roboto', sans-serif;
+}
+
+footer button:hover {
+    background-color: #45a049;
+}
+
+/* Підкреслення тексту і форматування адреси */
+footer p {
+    font-size: 1em;
+    margin: 10px 0;
+}
+
+
+.footer-content {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 10px;
+}
+
+.footer-content p {
+    margin: 0;
+}
+
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 20px 0 0;
+    display: flex;
+    justify-content: center;
+}
+
+.social-links li {
+    margin: 0 10px;
+}
+
+.social-links a img {
+    width: 30px;
+    height: 30px;
+    transition: transform 0.3s ease;
+}
+
+.social-links a:hover img {
+    transform: scale(1.2);
+}
+
+/* Стилі для About секції */
+.about {
+    padding: 40px 20px;
+    text-align: center;
+    background-color: #f9f7f6;
+}
+
+.about h2 {
+    font-size: 36px;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+.about p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    margin: 0 auto 20px;
+    max-width: 800px;
+}
+
+.about img {
+    max-width: 100%;
+    height: auto;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+/* Стилі для Team секції */
+.team {
+    padding: 40px 20px;
+    background-color: #fff;
+}
+
+.team h3 {
+    font-size: 28px;
+    color: #333;
+    margin-bottom: 30px;
+    text-align: center;
+}
+
+.team-members {
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 30px;
+}
+
+.team-member {
+    text-align: center;
+    max-width: 200px;
+}
+
+.team-photo {
+    width: 100%;
+    height: auto;
+    border-radius: 50%;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    margin-bottom: 15px;
+}
+
+.team-member h4 {
+    font-size: 20px;
+    color: #333;
+    margin: 10px 0 5px;
+}
+
+.team-member p {
+    font-size: 16px;
+    color: #777;
+    margin: 0;
+}
+
+/* Стилі для Gallery */
+.gallery {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    gap: 10px;
+    justify-items: center;
+}
+
+.gallery img {
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease-in-out;
+}
+
+.gallery img:hover {
+    transform: scale(1.05);
+}
+
+
+/* Кастомізація для логотипу */
+.logo-image {
+    width: 145px;
+    height: auto;
+    border-radius: 50%;
+}
+
+/* Кастомізація для активного пункту в меню */
+.horizontal-menu a.active {
+    background-color: #555;
+    color: #fff;
+    padding: 10px 25px;
+    border-radius: 30px;
+    font-weight: bold;
+    transition: all 0.3s ease;
+}
+
+.horizontal-menu a:hover {
+    background-color: #444;
+}
+html {
+    scroll-behavior: smooth;
+}
+/* Стилі для секції послуг */
+#services {
+    padding: 40px 20px;
+    background-color: #f9f7f6;
+    text-align: center;
+}
+
+#services h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.services-container {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 20px;
+}
+
+.service-item {
+    width: 280px; /* Ширина прямокутників */
+    background-color: #fff;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    overflow: hidden;
+    text-align: center;
+    transition: transform 0.3s ease;
+}
+
+.service-item:hover {
+    transform: translateY(-10px); /* Легкий ефект піднімання при hover */
+}
+
+.service-item img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+}
+
+.service-item h3 {
+    font-size: 20px;
+    margin: 15px 0;
+    color: #333;
+}
+
+.service-item .btn {
+    display: inline-block;
+    background-color: #ff85a1;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    margin-bottom: 20px;
+    transition: background 0.3s;
+}
+
+.service-item .btn:hover {
+    background: #f06277;
+}
+/* Стилі для секції Home */
+#home {
+    padding: 60px 20px;
+    background-color: #f9f7f6;
+    text-align: center;
+}
+
+#home h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.home-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.home-image img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.home-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.home-text p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.home-text .btn {
+    display: inline-block;
+    background-color: #ff85a1;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.home-text .btn:hover {
+    background: #f06277;
+}
+/* Стилі для секції About */
+#about {
+    padding: 60px 20px;
+    background-color: #fff;
+    text-align: center;
+}
+
+#about h2 {
+    font-size: 36px;
+    margin-bottom: 40px;
+    color: #333;
+}
+
+.about-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+    gap: 40px;
+    flex-wrap: wrap;
+}
+
+.about-text {
+    max-width: 600px;
+    text-align: left;
+}
+
+.about-text p {
+    font-size: 18px;
+    line-height: 1.8;
+    color: #555;
+    margin-bottom: 20px;
+}
+
+.about-text .btn {
+    display: inline-block;
+    background-color: #ff85a1;
+    color: #fff;
+    padding: 10px 20px;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.about-text .btn:hover {
+    background: #f06277;
+}
+
+.about-image img {
+    width: 100%;
+    height: auto;
+    max-width: 500px;
+    border-radius: 10px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+#blog {
+    padding: 50px 20px;
+    background-color: #f9f9f9;
+    text-align: center;
+}
+
+#blog h2 {
+    font-size: 2rem;
+    color: #333;
+    margin-bottom: 30px;
+    font-weight: bold;
+}
+
+.blog-container {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 20px;
+    justify-content: center;
+}
+
+.blog-item {
+    background: #fff;
+    border: 1px solid #ddd;
+    border-radius: 8px;
+    padding: 20px;
+    width: 300px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.blog-item:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 6px 10px rgba(0, 0, 0, 0.15);
+}
+
+.blog-item h3 {
+    font-size: 1.5rem;
+    margin-bottom: 10px;
+}
+
+.blog-item h3 a {
+    color: #007BFF;
+    text-decoration: none;
+}
+
+.blog-item h3 a:hover {
+    text-decoration: underline;
+}
+
+.blog-item p {
+    font-size: 1rem;
+    color: #555;
+    line-height: 1.5;
+}
+.gallery-btn {
+    padding: 12px 24px; /* Відступи зліва та справа */
+    background-color: #f06277; /* Колір фону кнопки */
+    color: white; /* Колір тексту */
+    border: none; /* Без рамки */
+    border-radius: 8px; /* Закруглені кути */
+    font-size: 16px; /* Розмір шрифта */
+    font-weight: bold; /* Жирний шрифт */
+    cursor: pointer; /* Курсор при наведенні */
+    text-transform: uppercase; /* Великими літерами */
+    transition: background-color 0.3s, transform 0.3s; /* Анімація для змін */
+}
+.gallery-btn:hover {
+    background-color: #ff5a00; /* Зміна кольору фону на наведенні */
+    transform: scale(1.05); /* Трохи збільшується при наведенні */
+}
+
+.gallery-btn:focus {
+    outline: none; /* Знімає рамку при фокусі */
+}
+.reviews {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+}
+
+.review {
+    background-color: #f9f9f9;
+    border-radius: 10px;
+    padding: 20px;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+    display: flex;
+    flex-direction: column;
+}
+
+.review-header {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.review-photo {
+    width: 80px;
+    height: 80px;
+    border-radius: 50%;
+    object-fit: cover;
+}
+
+.review-info {
+    display: flex;
+    flex-direction: column;
+}
+
+.review-info h3 {
+    margin: 0;
+    font-size: 1.2em;
+    color: #333;
+}
+
+.review-info p {
+    margin: 0;
+    font-size: 0.9em;
+    color: #777;
+}
+
+.review-content {
+    margin-top: 15px;
+    font-size: 1em;
+    color: #444;
+}
+/* Стиль для заголовків у розділі */
+h2 {
+    font-family: 'Roboto', sans-serif; /* Застосування сучасного шрифта */
+    font-size: 2em;
+    font-weight: bold;
+    color: #4CAF50;
+    text-align: center;
+    margin-bottom: 30px; /* Відступ знизу */
+    letter-spacing: 1px; /* Легке збільшення відстані між літерами */
+    text-transform: uppercase; /* Всі літери заголовку великими */
+}
+
+/* Стиль для заголовків в відгуках */
+h3 {
+    font-family: 'Lora', serif; /* Краще для імен клієнтів */
+    font-size: 1.5em;
+    color: #333;
+    margin: 0;
+    padding-bottom: 5px;
+    text-transform: capitalize; /* Перша буква великою */
+}
+
+.review-info p {
+    font-family: 'Arial', sans-serif; /* Шрифт для посади */
+    font-size: 0.9em;
+    color: #777;
+    margin: 0;
+}
+
+/* Стилі для відступів у відгуках */
+.review {
+    padding: 20px;
+    margin-bottom: 20px; /* Відступ між відгуками */
+}
+
+.review-header {
+    margin-bottom: 15px;
+}
+
+/* Кнопка для відгуків */
+button {
+    font-family: 'Roboto', sans-serif;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+
+/* Стилізація для секцій, щоб виглядало елегантно */
+section {
+    margin: 40px 0;
+}
+
+/* Загальні стилі для всіх заголовків */
+h1, h2, h3 {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+}
+
+/* Спеціальні шрифти */
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@400;500&family=Lora:wght@400;500&display=swap');
+/* Загальні стилі для основного тексту */
+body {
+    font-family: 'Arial', sans-serif; /* Використовуємо стандартний шрифт для контенту */
+    background-color: #f9f9f9; /* Світлий фон */
+    color: #333; /* Текст темно-сірий для зручності читання */
+    line-height: 1.6; /* Лінійна висота для кращої читабельності */
+    margin: 0;
+    padding: 0;
+}
+
+main {
+    max-width: 1200px;
+    margin: 0 auto; /* Центрування контенту */
+    padding: 20px; /* Відступи з усіх боків */
+}
+
+/* Стиль для абзаців */
+p {
+    font-size: 1.1em;
+    margin-bottom: 20px; /* Відступ після кожного абзацу */
+    text-align: justify; /* Вирівнювання тексту по ширині */
+    color: #555; /* Трохи світліший відтінок для основного тексту */
+}
+
+/* Стилі для заголовків секцій */
+h2, h3, h4 {
+    font-family: 'Roboto', sans-serif;
+    color: #333;
+    margin-top: 30px;
+    margin-bottom: 10px;
+}
+
+h2 {
+    font-size: 2em;
+    font-weight: bold;
+    text-align: center;
+    letter-spacing: 1px;
+    text-transform: uppercase;
+}
+
+h3 {
+    font-size: 1.5em;
+    font-weight: bold;
+    color: #4CAF50; /* Зеленуватий колір для заголовків */
+    margin-bottom: 10px;
+}
+
+/* Стилі для списків */
+ul, ol {
+    margin: 0 0 20px 40px; /* Відступи зліва для списків */
+}
+
+li {
+    font-size: 1.1em;
+    line-height: 1.6;
+    color: #666;
+}
+
+/* Стилі для цитат */
+blockquote {
+    font-size: 1.2em;
+    font-style: italic;
+    background-color: #f0f0f0; /* Легкий фон для цитат */
+    border-left: 5px solid #4CAF50; /* Лінія зліва для цитат */
+    padding: 10px 20px;
+    margin: 20px 0;
+}
+
+/* Для лінків */
+a {
+    color: #4CAF50; /* Зелений колір для лінків */
+    text-decoration: none; /* Без підкреслення */
+    font-weight: bold;
+}
+
+a:hover {
+    color: #45a049; /* Зміна кольору при наведенні */
+}
+
+/* Відступи для всього контенту */
+section {
+    margin-bottom: 40px; /* Відступ між секціями */
+}
+
+/* Стиль для кнопок */
+button {
+    font-family: 'Roboto', sans-serif;
+    padding: 12px 25px;
+    font-size: 1.1em;
+    background-color: #4CAF50;
+    color: white;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    margin-top: 20px;
+    text-transform: uppercase;
+}
+
+button:hover {
+    background-color: #45a049;
+}
+/* Основне стилювання для контактної сторінки */
+#contact-details {
+    padding: 30px;
+    font-family: 'Arial', sans-serif;
+}
+
+/* Контейнер для двох блоків */
+.contact-container {
+    display: flex;
+    justify-content: space-between;
+    gap: 20px;
+    padding: 20px;
+}
+
+/* Ліва частина для текстових даних та іконок */
+.contact-info {
+    flex: 1;
+    max-width: 600px;
+}
+
+/* Відступи та вирівнювання для кожного тексту */
+.contact-info p {
+    margin-bottom: 10px;
+    font-size: 16px;
+}
+
+/* Контейнер для іконок соціальних мереж (2 колонки) */
+.social-links {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr); /* Дві колонки */
+    gap: 20px;
+    margin-top: 20px;
+}
+
+.social-links a {
+    display: inline-block;
+    text-align: center;
+}
+
+.social-links img {
+    width: 50px;
+    height: 50px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}
+
+/* Правая частина для карти */
+.contact-map {
+    flex: 1;
+    min-width: 800px;
+    height: 600px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    margin-bottom: 30px;
+}
+
+.contact-map h3 {
+    margin-bottom: 10px;
+    text-align: center;
+}
+
+.contact-map iframe {
+    width: 100%;
+    height: 100%;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+
+/* Стиль footer */
+footer {
+    background-color: #333;
+    color: white;
+    padding: 20px;
+    text-align: center;
+}
+
+/* Список іконок соціальних мереж в ряд */
+.social-links {
+    list-style: none;
+    padding: 0;
+    margin: 10px 0;
+    display: flex;
+    justify-content: center;
+    gap: 20px;
+}
+
+.social-links li {
+    display: inline-block;
+}
+
+.social-links img {
+    width: 40px;
+    height: 40px;
+    transition: transform 0.3s ease-in-out;
+}
+
+.social-links img:hover {
+    transform: scale(1.1);
+}
+
+/* Кнопка для більше контактних даних */
+footer button {
+    background-color: #f06277;
+    color: white;
+    border: none;
+    padding: 10px 20px;
+    font-size: 16px;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background-color 0.3s ease-in-out;
+    margin-top: 20px;
+}
+
+footer button:hover {
+    background-color: #e67e22;
+}
+.about-us-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.about-text {
+    width: 60%;
+}
+
+.about-photo {
+    width: 35%;
+    border-radius: 10px;
+}
+
+.team {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 50px;
+}
+
+.team-member {
+    text-align: center;
+    width: 30%;
+}
+
+.team-photo {
+    width: 80%;
+    border-radius: 10px;
+    margin-bottom: 15px;
+}
+
+.values-list {
+    list-style-type: none;
+    padding: 0;
+}
+
+.values-list li {
+    margin-bottom: 10px;
+}
+.about-photo, .team-photo {
+    width: 100%;
+    max-width: 100%; /* Це обмежить максимальну ширину фотографії */
+    border-radius: 10px; /* Округлення кутів */
+    margin: 0 auto; /* Центрування */
+    padding: 10px; /* Відступи всередині */
+}
+
+/* Для блоку з фотографіями в секції "Про нас" */
+.about-us-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 20px; /* Відступи між блоками */
+    margin-bottom: 30px;
+}
+
+/* Для фотографій у команді */
+.team {
+    display: flex;
+    justify-content: center; /* Центрування елементів по горизонталі */
+    gap: 20px; /* Відступ між елементами (можна зменшити це значення, щоб зробити відстань менше) */
+    margin-top: 50px;
+}
+
+.team-member {
+    text-align: center;
+    width: 22%; /* Зменшуємо ширину кожного блоку, щоб вони стали меншими */
+    padding: 10px; /* Відступи всередині блоків */
+    background-color: #f7f7f7; /* Легкий фон */
+    border-radius: 10px; /* Округлення кутів */
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1); /* Легка тінь */
+}
+
+.team-photo {
+    width: 100%; /* Зображення займатиме всю доступну ширину */
+    max-width: 100%;
+    border-radius: 10px; /* Округлення кута */
+    margin-bottom: 15px; /* Відступ від тексту */
+}
+
+/* Відступи навколо тексту та інших елементів */
+h2, h3, p {
+    margin-bottom: 20px; /* Відступи між заголовками та текстами */
+}
+
+/* Для секції про цінності */
+.values-list {
+    list-style-type: none;
+    padding: 0;
+    margin: 0;
+}
+
+.values-list li {
+    margin-bottom: 10px; /* Відступи між пунктами списку */
+    padding-left: 20px; /* Відступ зліва */
+    position: relative;
+}
+
+.values-list li::before {
+    content: '•';
+    position: absolute;
+    left: 0;
+    top: 0;
+    font-size: 20px;
+    color: #5d5d5d;
+}
+#faq {
+    padding: 20px;
+    background-color: #f9f9f9;
+}
+
+.faq-item {
+    margin-bottom: 20px;
+}
+
+.faq-item h2 {
+    font-size: 1.5em;
+    margin-bottom: 10px;
+}
+
+.faq-item p {
+    font-size: 1em;
+    line-height: 1.5;
+    color: #555;
+}
+.fade-in {
+    opacity: 0;
+    transition: opacity 0.5s ease;
+}
+.fade-in.visible {
+    opacity: 1;
+}
+.fixed-menu {
+    transition: all 0.3s ease;
+}
+.fixed-menu.scrolled {
+    background-color: rgba(0, 0, 0, 0.7);
+    padding: 10px 20px;
+}
+.service-gallery {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 10px;
+    margin: 20px 0;
+    justify-content: center;
+}
+
+.service-gallery img {
+    width: 30%;
+    border-radius: 5px;
+    box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+    object-fit: cover;
+}
+
+.services-table {
+    width: 100%;
+    border-collapse: collapse;
+    margin-top: 20px;
+}
+
+.services-table th, .services-table td {
+    padding: 10px;
+    border: 1px solid #ccc;
+    text-align: left;
+}
+
+.services-table th {
+    background-color: #f9f9f9;
+    font-weight: bold;
+}
